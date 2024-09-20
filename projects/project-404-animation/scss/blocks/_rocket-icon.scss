@@ -1,0 +1,55 @@
+/* Анимация для красного пламени */
+.rocket-icon__flame-red {
+  transform: translateY(5px) scale(1, 0.9);
+	transform-origin: 50% 0;
+	animation: flameAnimation 1s infinite ease-in-out;
+}
+
+/* Анимация для желтого пламени */
+.rocket-icon__flame-yellow {
+  transform: translateY(5px) scale(1, 0.9);
+	transform-origin: 50% 0;
+	animation: flameAnimation 1s infinite ease-in-out;
+}
+
+/* Анимация для белого пламени */
+.rocket-icon__flame-white {
+  transform: translateY(5px) scale(1, 0.9);
+	transform-origin: 50% 0;
+  animation: flameAnimation 1s infinite ease-in-out;
+}
+
+/* Анимация для искр */
+.rocket-icon__spark {
+  opacity: 0;
+
+  &--first {
+    transform: translate(10px, -20px);
+    animation: firstSparkMove 0.4s linear infinite;
+   }
+
+  &--secondary {
+    transform: translate(5px, 30px);
+    animation: secondarySparkMove 0.3s linear infinite;
+  }
+
+  &--third {
+    transform: translate(7px, -30px);
+    animation: thirdSparkMove 0.3s linear infinite;
+  }
+
+  &--fourth {
+    transform: translate(-8px, -20px);
+    animation: fourthSparkMove 0.4s linear infinite 0.2s;
+  }
+
+  &--fifth {
+    transform: translate(-15px, -30px);
+    animation: fifthSparkMove 0.3s linear infinite 0.15s;
+  }
+
+  &--sixth {
+    transform: translate(-7px, -30px);
+    animation: sixthSparkMove 0.2s linear infinite 0.1s;
+  }
+}

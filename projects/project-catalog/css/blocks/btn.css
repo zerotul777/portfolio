@@ -1,0 +1,31 @@
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ad8361;
+    border-radius: 60px;
+    color: #ad8361;
+    cursor: pointer;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    padding: 11px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #ad8361;
+    color: #ffffff;
+}
+
+.btn:focus-visible {
+    background-color: #ad8361;
+    color: #ffffff;
+    outline: none;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+}

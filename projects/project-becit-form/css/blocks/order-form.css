@@ -1,0 +1,60 @@
+.order-form {
+    display: grid;
+    grid-template-columns: 700px 420px;
+    gap: 80px;
+    align-items: start;
+}
+
+.order-form__left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.order-form__group {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order-form__group-name {
+    margin-bottom: 40px;
+    font-family: 'Press Start 2P', 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.order-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.order-form__inner {
+    display: grid;
+    grid-template-columns: 340px 340px;
+    gap: 16px 20px;
+}
+
+.order-form__selection {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.order-form__card-data {
+    display: grid;
+    grid-template-columns: 382px 94px 94px 94px;
+    gap: 12px;
+}
+
+.order-form__right-col {
+    position: sticky;
+    top: 72px;
+    padding: 0 0 24px;
+}

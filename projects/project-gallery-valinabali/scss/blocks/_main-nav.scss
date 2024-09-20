@@ -1,0 +1,32 @@
+.main-nav {
+  padding: 15px 0 14px;
+  border-top: 1px solid $color-white-20;
+
+  @include vp-1023 {
+    display: none;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+  }
+
+  &__link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $color-white;
+    outline: none;
+    transition: color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-white-50;
+    }
+  }
+}

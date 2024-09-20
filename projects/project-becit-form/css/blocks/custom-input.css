@@ -1,0 +1,143 @@
+.custom-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.custom-input--icon .custom-input__field {
+    padding: 34px 54px 12px 20px;
+}
+
+.custom-input--icon-box .custom-input__field {
+    padding: 34px 139px 12px 20px;
+}
+
+.custom-input__field {
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 34px 20px 12px;
+    font-family: 'Play', 'Arial', sans-serif;
+    overflow: hidden;
+    transition: background-color 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.custom-input__field::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 1;
+}
+
+.custom-input__label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    transition: color 0.2s ease-in;
+}
+
+.custom-input__icon-box {
+    position: absolute;
+    top: 34px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.custom-input__icon-box .custom-input__icon {
+    position: static;
+}
+
+.custom-input__icon {
+    position: absolute;
+    right: 20px;
+    top: 34px;
+    color: rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+    transition: color 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+/* Hover */
+.custom-input__field:hover {
+    background-color: rgba(111, 181, 130, 0.15);
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
+}
+
+.custom-input__field:hover~.custom-input__icon {
+    color: #87f29a;
+}
+
+/* Valid */
+.custom-input__field:valid~.custom-input__icon {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Focus */
+.custom-input__field:focus-visible {
+    outline: none;
+    background-color: rgba(111, 181, 130, 0.15);
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.12);
+}
+
+.custom-input__field:focus-visible~.custom-input__icon {
+    color: #87f29a;
+}
+
+/* Error */
+.custom-input--error .custom-input__error {
+    display: block;
+}
+
+.custom-input__error {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #ff7575;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.custom-input--error .custom-input__field {
+    background-color: rgba(255, 117, 117, 0.15);
+}
+
+.custom-input--error .custom-input__icon {
+    color: #ff7575;
+}
+
+.custom-input--error .custom-input__label {
+    color: #ff7575;
+}
+
+.custom-input--error .custom-input__field:hover~.custom-input__icon {
+    color: #f74242;
+}
+
+/* Disable */
+.custom-input__field:disabled {
+    background-color: rgba(255, 255, 255, 0.05);
+    caret-color: transparent;
+}
+
+.custom-input__field:disabled+.custom-input__label {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.custom-input__field:disabled:hover~.custom-input__icon {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.custom-input--icon-box .custom-input__field:disabled~.custom-input__icon-box .custom-input__icon {
+    opacity: 0.4;
+}

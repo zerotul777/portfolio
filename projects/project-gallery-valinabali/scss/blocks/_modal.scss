@@ -1,0 +1,122 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+
+	&::after {
+		content: '';
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $color-black-60;
+		pointer-events: none;
+	}
+
+	&--active {
+		display: block;
+	}
+
+	&--success {
+		display: block;
+	}
+
+	&--success .form-page {
+		display: none;
+	}
+
+	&--success .success-page {
+		display: flex;
+	}
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		overflow-y: auto;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: 40px;
+
+		@include vp-1023 {
+			padding: 0;
+		}
+	}
+
+	&__content {
+		position: relative;
+		width: 100%;
+		border-radius: 40px;
+		max-width: 1100px;
+		min-height: 586px;
+		margin: auto;
+		padding: 30px 70px 60px;
+		background-color: $color-white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include vp-1023 {
+			border-radius: 0;
+			padding: 30px 120px 60px;
+			height: 100vh;
+		}
+
+		@include vp-767 {
+			padding: 20px 20px 49px;
+		}
+	}
+
+	&__close-btn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 70px;
+		height: 70px;
+		padding: 0;
+		background-color: $color-ghost-white;
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		outline: none;
+		transition: background-color 0.2s ease;
+
+		@include vp-767 {
+			width: 48px;
+			height: 48px;
+			top: 5px;
+			right: 5px;
+		}
+
+		&:hover,
+		&:focus-visible {
+			background-color: $color-white-lilac-2;
+		}
+
+		&:hover .modal__close-icon,
+		&:focus-visible .modal__close-icon {
+			transform: scale(1.5);
+		}
+	}
+
+	&__close-icon {
+		width: 20px;
+		height: 20px;
+		flex-shrink: 0;
+		transition: transform 0.2s ease;
+
+		@include vp-767 {
+			width: 14px;
+			height: 14px;
+		}
+	}
+}

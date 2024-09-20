@@ -1,0 +1,154 @@
+.info-cell {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	@include vp-767 {
+		gap: 10px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+
+		@include vp-767 {
+			gap: 0;
+		}
+	}
+
+	&__counter {
+		display: flex;
+		align-items: flex-end;
+		gap: 15px;
+		font-family: $ff-tenor;
+		color: $color-fallow;
+
+		@include vp-1023 {
+			gap: 5px;
+		}
+
+		&--center {
+			@include vp-1023 {
+				align-items: center;
+			}
+		}
+
+		&-number {
+			font-size: 46px;
+			line-height: 48px;
+
+			@include vp-1023 {
+				font-size: 42px;
+				line-height: 40px;
+			}
+
+			@include vp-767 {
+				font-size: 28px;
+				line-height: 36px;
+			}
+		}
+
+		&-unit {
+			font-size: 20px;
+			line-height: 28px;
+			text-transform: uppercase;
+
+			@include vp-1023 {
+				font-size: 14px;
+				line-height: 18px;
+			}
+
+			@include vp-767 {
+				line-height: 26px;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 26px;
+		color: $color-white;
+		text-align: center;
+
+		@include vp-1023 {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__icon {
+		display: none;
+
+		@include vp-1023 {
+			display: flex;
+		}
+	}
+
+	&--xl .info-cell__wrapper {
+		gap: 30px;
+		background-color: $color-rustic-red;
+
+		@include vp-1023 {
+			gap: 20px;
+			width: 155px;
+		}
+	}
+
+	&--xl .info-cell__counter {
+		gap: 15px;
+
+		@media (max-width: 1439px) {
+			gap: 10px;
+		}
+
+		@include vp-1023 {
+			gap: 8px;
+		}
+	}
+
+	&--xl .info-cell__counter-number {
+		font-size: 140px;
+		line-height: 100px;
+		letter-spacing: -0.04em;
+
+		@media (max-width: 1439px) {
+			font-size: 120px;
+			line-height: 80px;
+		}
+
+		@include vp-1023 {
+			font-size: 90px;
+			line-height: 70px;
+		}
+
+		@include vp-767 {
+			font-size: 70px;
+			line-height: 50px;
+		}
+	}
+
+	&--xl .info-cell__counter-unit {
+		font-size: 34px;
+		line-height: 28px;
+		padding: 0;
+
+		@media (max-width: 1439px) {
+			font-size: 26px;
+			line-height: 24px;
+		}
+
+		@include vp-1023 {
+			font-size: 14px;
+			line-height: 18px;
+			margin: 0 0 30px;
+		}
+
+		@include vp-767 {
+			line-height: 14px;
+			margin: 0;
+		}
+	}
+}

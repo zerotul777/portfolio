@@ -1,0 +1,58 @@
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+
+  &__img {
+    flex-shrink: 0;
+    border-radius: 8px;
+
+    @include vp-1023 {
+      width: 100% !important;
+      height: unset !important;
+    }
+  }
+              // не знаю, зачем все эти модификаторы
+  &__img--size-xs {
+    width: 240px;
+    height: 240px;
+  }
+
+  &__img--size-s {
+    width: 240px;
+    height: 315px;
+  }
+
+  &__img--size-m {
+    width: 365px;
+    height: 300px;
+  }
+
+  &__img--size-l {
+    width: 366px;
+    height: 410px;
+  }
+
+  &__img--size-xl {
+    width: 365px;
+    height: 490px;
+  }
+
+  &__img--size-xxl {
+    width: 500px;
+    height: 300px;
+  }
+
+  &__caption {
+    color: $color-nero-50;
+    text-align: right;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 12px;
+    }
+  }
+}

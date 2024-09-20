@@ -1,0 +1,23 @@
+/* Global */
+
+@import "global/normalize.css";
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/visually-hidden.css";
+
+/* Blocks */
+
+@import "blocks/header.css";
+@import "blocks/catalog.css";
+@import "blocks/btn.css";
+@import "blocks/overlay.css";
+@import "blocks/custom-checkbox.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-radio.css";
+@import "blocks/filter-form.css";
+@import "blocks/view-switch.css";
+@import "blocks/catalog-list.css";
+@import "blocks/catalog-card.css";
+@import "blocks/parameter-card.css";
+

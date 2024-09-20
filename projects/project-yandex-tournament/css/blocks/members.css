@@ -1,0 +1,95 @@
+.members {
+  padding: 30px 0 0;
+  margin: 0 0 140px;
+}
+
+.members__wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 61px;
+  grid-auto-flow: dense;
+}
+
+.members__title {
+  margin: 0;
+  font-family: "Merriweather", "Times New Roman", serif;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.members__action {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-self: end;
+}
+
+.members__carousel {
+  grid-column: span 2;
+  overflow-x: hidden;
+}
+
+.members__counter {
+  display: flex;
+  width: 35px;
+}
+
+.members__counter-current {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.members__counter-total {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  opacity: 0.6;
+}
+
+.members__counter-total::before {
+  content: "/";
+  padding: 0 4px 0 3px;
+}
+
+.members__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.members__item {
+  min-width: 335px;
+}
+
+/* Медиа-запросы */
+@media (max-width: 768px) {
+  .members {
+    margin: 0 0 100px;
+  }
+
+  .members__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .members__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .members__action {
+    align-self: center;
+    gap: 10px;
+  }
+
+  .members__counter-total::before {
+    padding: 0 1px;
+  }
+}

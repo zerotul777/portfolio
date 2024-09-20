@@ -1,0 +1,138 @@
+.catalog-card {
+	position: relative;
+	background-color: #FFFFFF;
+}
+
+.catalog-card__top {
+	row-gap: 48px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.catalog-card__footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px 26px;
+	border-top: 1px solid rgba(9, 9, 9, 0.1);
+}
+
+.catalog-card__title {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 17px;
+	letter-spacing: -0.04em;
+}
+
+.catalog-card__pic {
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+.catalog-card__parameters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog-card__area {
+	row-gap: 4px;
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+}
+
+.catalog-card__subtitle {
+	margin: 0;
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 12px;
+	letter-spacing: -0.04em;
+}
+
+.catalog-card__area-value {
+	margin: 0;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: -0.04em;
+}
+
+.catalog-card__area-count {
+	padding-right: 4px;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: -0.04em;
+}
+
+.catalog-card__price-block {
+	row-gap: 4px;
+	display: flex;
+	flex-direction: column;
+	max-width: 200px;
+}
+
+.catalog-card__price {
+	margin: 0;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: right;
+	letter-spacing: -0.02em;
+}
+
+.catalog-card__price-total {
+	margin: 0;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: right;
+	letter-spacing: -0.04em;
+}
+
+.catalog-card__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.catalog-card__btn-like {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	line-height: 0;
+	color: transparent;
+	background-color: initial;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	transition: color 0.2s ease-in;
+}
+
+.catalog-card__btn-like:hover {
+	color: #EFEDE7;
+}
+
+.catalog-card__btn-like:focus-visible {
+	outline: none;
+	color: #EFEDE7;
+}
+
+.catalog-card__btn-like:active {
+	color: #AC8361;
+}
+
+.catalog-card:hover .overlay,
+.catalog-card__inner:focus-visible ~ .overlay {
+	opacity: 1;
+}
+
+.catalog-card__inner:focus-visible {
+	outline: none;
+}

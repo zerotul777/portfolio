@@ -1,0 +1,21 @@
+/* Global */
+
+/* ------------------------------------ */
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/visually-hidden.css";
+@import "global/normalize.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/hero.css";
+@import "blocks/hero-background.css";
+@import "blocks/btn.css";
+@import "blocks/ticker.css";
+@import "blocks/custom-table.css";
+@import "blocks/tournament.css";
+@import "blocks/stages.css";
+@import "blocks/stage-card.css";
+@import "blocks/members.css";
+@import "blocks/member-card.css";
+@import "blocks/footer.css";

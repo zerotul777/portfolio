@@ -1,0 +1,38 @@
+.btn {
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	background-color: $color-safety-orange;
+	border: 1px solid transparent;
+	border-radius: 12px;
+	color: $color-white;
+	font-size: 22px;
+	line-height: 28px;
+	padding: 20px;
+	cursor: pointer;
+	outline: none;
+	transition: background-color $transition-300;
+
+  &__icon {
+    color: inherit;
+    transition: transform $transition-300;
+  }
+
+	&:not(:disabled):hover,
+	&:focus-visible {
+		background-color: $color-safety-orange-60;
+
+    .btn__icon {
+      transform: translateX(7px);
+    }
+	}
+
+	&--secondary {
+		width: 100%;
+		padding: 12px;
+		box-shadow: 2px 2px 20px rgba(253, 111, 0, 0.5);
+		border-radius: 4px;
+	}
+}

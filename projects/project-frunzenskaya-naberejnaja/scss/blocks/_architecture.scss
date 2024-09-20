@@ -1,0 +1,145 @@
+.architecture {
+	margin: 0 0 120px;
+
+	@include vp-1023 {
+		margin: 0 0 80px;
+	}
+
+	@include vp-767 {
+		margin: 0 0 60px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+
+		@include vp-1023 {
+			gap: 20px;
+		}
+
+		@include vp-767 {
+			gap: 40px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		gap: 50px;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 719px) {
+			justify-content: center;
+			align-self: center;
+			max-width: 295px;
+			flex-direction: column;
+			gap: 15px;
+			justify-content: center;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		font-family: $ff-tenor;
+		font-weight: 400;
+		font-size: 34px;
+		line-height: 44px;
+		letter-spacing: -0.08em;
+		color: $color-fallow;
+		text-transform: uppercase;
+
+		@media (max-width: 1439px) {
+			font-size: 28px;
+			line-height: 36px;
+		}
+
+		@include vp-1023 {
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		@include vp-767 {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 18px;
+		line-height: 26px;
+		color: $color-white;
+
+		@media (max-width: 1179px) {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		@include vp-1023 {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__title,
+	&__text {
+		width: 400px;
+
+		@media (max-width: 1639px) {
+			width: 31%;
+		}
+
+		@media (max-width: 1179px) {
+			width: 30.5%;
+		}
+
+		@media (max-width: 919px) {
+			width: 30%;
+		}
+
+		@media (max-width: 819px) {
+			width: 31.6%;
+		}
+
+		@media (max-width: 719px) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		gap: 40px;
+		justify-content: space-between;
+
+		@media (max-width: 819px) {
+			gap: 19px;
+		}
+
+		@media (max-width: 639px) {
+			gap: 10px;
+		}
+
+		@media (max-width: 539px) {
+			justify-content: start;
+			margin: 0 -20px;
+			padding: 0 20px;
+			overflow: auto;
+			flex-wrap: nowrap;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+
+	&__item {
+		@media (max-width: 539px) {
+			width: 160px;
+		}
+	}
+}

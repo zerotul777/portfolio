@@ -1,0 +1,24 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/normalize.css";
+@import "global/awesome.min.css";
+@import "global/visually-hidden.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/header.css";
+@import "blocks/animation.css";
+@import "blocks/btn.css";
+@import "blocks/custom-checkbox.css";
+@import "blocks/custom-input.css";
+@import "blocks/custom-radio.css";
+@import "blocks/custom-textarea.css";
+@import "blocks/order-form.css";
+@import "blocks/order.css";
+@import "blocks/order-form.css";
+@import "blocks/info-card.css";
+@import "blocks/footer.css";
+@import "blocks/socials.css";

@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: $color-black;
+
+	&__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+	}
+
+	&__logo {
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    outline: none;
+    color: $color-white;
+
+    &:hover,
+      &:focus-visible {
+          color: $color-safety-orange;
+        }
+	}
+
+	&__nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+		&-link {
+      display: flex;
+      padding: 24px 24px;
+      font-size: 20px;
+      line-height: 24px;
+      color: $color-white;
+      outline: none;
+
+      &:hover,
+      &:focus-visible {
+          background-color: $color-safety-orange-60;
+        }
+
+      &--accent {
+        background-color: $color-safety-orange;
+      }
+		}
+	}
+}

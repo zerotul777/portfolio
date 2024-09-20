@@ -1,0 +1,122 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 16px;
+    width: 100%;
+    background-color: #87f29a;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Play', 'Arial', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 15px 30px;
+    transition: background-color 0.2s ease-in;
+}
+
+.btn::before {
+    content: 'Отправить заказ';
+}
+
+.btn--error {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Hover */
+.btn:hover {
+    background-color: #44f161;
+    /* цвет не по макету, немного ярче */
+}
+
+/* Focus */
+.btn:focus-visible {
+    outline: none;
+    background-color: #44f161;
+}
+
+/* Disable */
+.btn:disabled {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.btn:disabled .btn__icon {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.btn__onclick {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border-width: 3px;
+    font-size: 0;
+    border-left-color: #fff;
+    animation: rotating 2s 0.25s linear infinite;
+
+    &:before {
+        content: '';
+    }
+
+    &:hover {
+        background-color: #44f161;
+        color: #ffffff;
+    }
+}
+
+.btn__validate {
+    font-family: 'Play', 'Arial', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: #44f161;
+
+    &:before {
+        content: 'Отправлено!';
+    }
+
+    &:hover {
+        background-color: #44f161;
+        color: #ffffff;
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn__validate .btn__icon {
+    display: none;
+}

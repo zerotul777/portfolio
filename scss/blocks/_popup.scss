@@ -1,0 +1,69 @@
+.popup {
+	padding: 50px 0;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -150%) scale(0);
+	transition: transform $transition-300, opacity $transition-300;
+
+	&--open {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+		pointer-events: all;
+		z-index: 10;
+	}
+
+	&__wrapper {
+		border-radius: 20px;
+		padding: 0 30px 30px;
+		background-color: $color-black;
+		border: 5px solid $color-safety-orange;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__circle {
+		width: 100px;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background-color: $color-safety-orange;
+		transform: translateY(-50%);
+		box-shadow: 2px 2px 20px rgba(253, 111, 0, 0.5);
+	}
+
+	&__icon {
+		width: 80px;
+		height: 80px;
+		flex-shrink: 0;
+		color: $color-white;
+	}
+
+	&__title {
+		margin: 0;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 40px;
+		letter-spacing: 0.02em;
+		color: $color-safety-orange;
+	}
+	&__text {
+		width: 80%;
+		margin: 0;
+		color: $color-black;
+		font-size: 22px;
+		line-height: 28px;
+		color: $color-white;
+		text-align: center;
+	}
+
+	&__btn {
+		margin: 10px 0 0;
+	}
+}

@@ -1,0 +1,30 @@
+.advantages {
+  margin: 0 0 100px;
+}
+
+.advantages__main-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__main-item--flat {
+  grid-column: span 2;
+}
+
+.advantages__secondary-list {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  margin: 100px 0 0;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.advantages__secondary-item {
+  width: calc(33.33% - 60px * 2 / 3);
+}

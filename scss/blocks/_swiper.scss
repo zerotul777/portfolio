@@ -1,0 +1,32 @@
+.swiper {
+  width: 100%;
+  height: 300px;
+
+  &-wrapper {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &-button-next,
+  &-button-prev {
+    outline: none;
+    color: $color-safety-orange;
+    transition: color $transition-300;
+
+    &:not(:disabled):hover,
+    &:focus-visible {
+        color: $color-white;
+      }
+  }
+
+  &-pagination-bullet {
+    background-color: $color-white;
+    transition: background-color $transition-300, opacity $transition-300;
+
+    &-active {
+      background-color: $color-safety-orange;
+    }
+  }
+  
+}

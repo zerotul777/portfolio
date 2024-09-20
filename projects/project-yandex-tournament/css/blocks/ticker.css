@@ -1,0 +1,65 @@
+.ticker {
+  background-color: #F54932;
+  padding: 18px 0;
+  overflow: hidden;
+}
+
+.ticker__wrapper {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.ticker__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.ticker__item {
+  font-family: "Merriweather", "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 0 18px 0 12px;
+  position: relative;
+}
+
+.ticker__item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Медиа-запросы */
+@media (max-width: 768px) {
+  .ticker {
+    padding: 10px 0;
+  }
+
+  .ticker__item {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

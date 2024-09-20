@@ -1,0 +1,44 @@
+.hero {
+  background-color: #f4f6fa;
+  margin: 0 0 100px;
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 150px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+.hero__heading {
+  margin: 0;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.hero__heading-highlight {
+  color: #476bf0;
+}
+
+.hero__description {
+  margin: 24px 0 0;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.006em;
+}
+
+.hero__btn {
+  margin: 48px 0 0;
+}
+
+.hero__image {
+  width: 660px;
+  height: 640px;
+  flex-shrink: 0;
+}

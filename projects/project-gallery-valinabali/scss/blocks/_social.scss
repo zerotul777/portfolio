@@ -1,0 +1,43 @@
+.social {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+
+	@include vp-767 {
+		gap: 10px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		border: 1px solid $color-deep-lilac-50;
+		color: $color-deep-lilac;
+		outline: none;
+		transition: border-color 0.2s ease, background-color 0.2s ease;
+
+		@include vp-767 {
+			width: 40px;
+			height: 40px;
+		}
+
+		&:hover,
+		&:focus-visible {
+			background-color: $color-white;
+			border-color: $color-white;
+		}
+	}
+
+	&__link-icon {
+		width: 18px;
+		height: 18px;
+		flex-shrink: 0;
+	}
+}

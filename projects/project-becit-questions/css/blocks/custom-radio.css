@@ -1,0 +1,64 @@
+.custom-radio {
+	display: flex;
+}
+
+.custom-radio__field:checked+.custom-radio__label::before {
+	background-color: #87f29a;
+}
+
+.custom-radio__field:checked+.custom-radio__label::after {
+	display: block;
+}
+
+.custom-radio__field:checked+.custom-radio__label .custom-radio__text {
+	color: #ffffff;
+}
+
+.custom-radio__label {
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+	padding: 0 0 0 48px;
+}
+
+.custom-radio__label:hover {
+	color: #87f29a;
+}
+
+.custom-radio__field:checked+.custom-radio__label:hover .custom-radio__text {
+	color: #87f29a;
+}
+
+.custom-radio__field:focus-visible+.custom-radio__label .custom-radio__text {
+	color: #87f29a;
+}
+
+.custom-radio__label::before {
+	content: '';
+	height: 30px;
+	width: 30px;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 50%;
+
+	position: absolute;
+	top: 1px;
+	left: 0;
+}
+
+.custom-radio__label::after {
+	content: '';
+	height: 12px;
+	width: 12px;
+	background-color: #000000;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 9px;
+	display: none;
+}
+
+.custom-radio__text {
+	font-size: 22px;
+	line-height: 32px;
+	transition: all 0.2s ease-in;
+}

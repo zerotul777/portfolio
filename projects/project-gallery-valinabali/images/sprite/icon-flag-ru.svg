@@ -1,0 +1,34 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="flag-ru-svgrepo-com" clip-path="url(#clip0_1838_792)">
+<g id="Clip path group">
+<mask id="mask0_1838_792" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="2" width="20" height="16">
+<g id="clip0_503_2726">
+<path id="Vector" d="M18.5714 2.85715H1.42857C0.639593 2.85715 0 3.49674 0 4.28572V15.7143C0 16.5033 0.639593 17.1429 1.42857 17.1429H18.5714C19.3604 17.1429 20 16.5033 20 15.7143V4.28572C20 3.49674 19.3604 2.85715 18.5714 2.85715Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_1838_792)">
+<g id="Group">
+<path id="Vector_2" d="M18.5713 3.03572H1.42847C0.738111 3.03572 0.178467 3.59536 0.178467 4.28572V15.7143C0.178467 16.4046 0.738111 16.9643 1.42847 16.9643H18.5713C19.2617 16.9643 19.8213 16.4046 19.8213 15.7143V4.28572C19.8213 3.59536 19.2617 3.03572 18.5713 3.03572Z" fill="white" stroke="#F5F5F5" stroke-width="14.2857"/>
+<g id="Mask group">
+<mask id="mask1_1838_792" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-7" y="-5" width="34" height="30">
+<g id="Group_2">
+<path id="Vector_3" d="M18.5713 3.03572H1.42847C0.738111 3.03572 0.178467 3.59536 0.178467 4.28572V15.7143C0.178467 16.4046 0.738111 16.9643 1.42847 16.9643H18.5713C19.2617 16.9643 19.8213 16.4046 19.8213 15.7143V4.28572C19.8213 3.59536 19.2617 3.03572 18.5713 3.03572Z" fill="white" stroke="white" stroke-width="14.2857"/>
+</g>
+</mask>
+<g mask="url(#mask1_1838_792)">
+<g id="Group_3">
+<path id="Vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M0 12.3809H20V7.61905H0V12.3809Z" fill="#0C47B7"/>
+<path id="Vector_5" fill-rule="evenodd" clip-rule="evenodd" d="M0 17.1428H20V12.3809H0V17.1428Z" fill="#E53B35"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1838_792">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

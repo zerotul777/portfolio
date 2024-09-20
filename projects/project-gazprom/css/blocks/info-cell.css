@@ -1,0 +1,44 @@
+.info-cell {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.info-cell__img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #476bf0;
+	border-radius: 12px;
+	padding: 16px;
+}
+
+.info-cell__icon {
+	width: 32px;
+	height: 32px;
+	flex-shrink: 0;
+}
+
+.info-cell__icon-xl {
+	width: 72px;
+	height: 72px;
+	flex-shrink: 0;
+}
+
+.info-cell__title {
+	margin: 20px 0 12px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 0.01em;
+}
+
+.info-cell__text {
+	margin: 0;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	color: #696e82;
+}

@@ -1,0 +1,181 @@
+.tournament {
+  padding: 30px 0 0;
+  margin: 50px 0 89px;
+}
+
+.tournament__title {
+  margin: 0;
+  font-family: "Merriweather", "Times New Roman", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.tournament__title--red {
+  font-weight: 700;
+  color: #F54932;
+}
+
+.tournament__lecture {
+  margin: 0 0 64px;
+}
+
+.tournament__lecture-wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 394px;
+  gap: 64px;
+}
+
+.tournament__lecture-img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.tournament__play-wrapper {
+  display: grid;
+  grid-template-columns: 518px 1fr;
+}
+
+.tournament__play-img {
+  position: relative;
+  width: 528px;
+  height: 609px;
+  top: -47px;
+  left: -22px;
+}
+
+.tournament__play-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tournament__table {
+  margin: 60px 0 48px;
+}
+
+.tournament__link {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3057A2;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1180px) {
+  .tournament__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .tournament__lecture-wrapper {
+    gap: 20px;
+    grid-template-columns: 2fr minmax(340px, 1fr);
+  }
+
+  .tournament__play-wrapper {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .tournament__play-img {
+    width: 100%;
+    height: auto;
+    max-width: 518px;
+    min-width: 375px;
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .tournament__play-wrapper {
+    display: grid;
+    grid-template-columns: minmax(380px, 2fr) 3fr;
+  }
+
+  .tournament__play-content {
+    display: contents;
+  }
+
+  .tournament__title--alt {
+    margin: 60px 0 0;
+  }
+
+  .tournament__table,
+  .tournament__link {
+    grid-column: span 2;
+  }
+
+  .tournament__table {
+    margin: 0 0 40px;
+  }
+}
+
+@media (max-width: 810px) {
+  .tournament__title--alt {
+    margin: 0;
+  }
+
+  .tournament__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 744px) {
+  .tournament {
+    padding: 20px 0 0;
+    margin: 28px 0 90px;
+  }
+
+  .tournament__lecture-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .tournament__title {
+    display: contents;
+  }
+
+  .tournament__title-bottom {
+    order: 2;
+  }
+
+  .tournament__lecture {
+    flex-direction: column;
+    margin: 0 0 20px;
+  }
+
+  .tournament__lecture-img {
+    order: 1;
+    max-width: 394px;
+  }
+
+  .tournament__play-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tournament__play-content {
+    display: flex;
+  }
+
+  .tournament__play-img {
+    top: 0;
+    left: 0;
+  }
+
+  .tournament__table {
+    margin: 44px 0 40px;
+  }
+
+  .tournament__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

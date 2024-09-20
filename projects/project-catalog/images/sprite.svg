@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+	<symbol id="icon-like" viewBox="0 0 24 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		<path
+			d="M22.7848 5.70581C22.1692 3.13551 20.2581 1.33064 17.8519 1.05188C15.4673 0.773112 13.6809 1.88344 12.3336 3.9718C12.2217 4.14662 12.1227 4.32616 11.9979 4.53878C11.9462 4.45846 11.9075 4.39231 11.8688 4.32144C11.0897 2.95597 10.0824 1.88344 8.67488 1.34481C5.54126 0.154162 1.71033 2.10078 1.08188 6.35311C0.776268 8.44147 1.34445 10.2605 2.48082 11.9048C3.30727 13.1001 4.28007 14.1443 5.33465 15.094C7.39216 16.9461 9.4755 18.7699 11.5459 20.6031C11.6923 20.7307 11.8343 20.8583 11.9936 21C12.0495 20.9528 12.1055 20.9102 12.1615 20.863C14.1975 19.0676 16.2464 17.2863 18.2694 15.472C19.4575 14.4089 20.5809 13.2655 21.515 11.9142C22.2381 10.8653 22.7676 9.72189 22.9397 8.40367C22.957 8.26665 22.9828 8.12491 23 7.98789C23 7.6288 23 7.26499 23 6.90591C22.9268 6.5043 22.8795 6.09797 22.7848 5.70581Z"
+			stroke="#AC8361" />
+	</symbol>
+	<symbol id="icon-burger" viewBox="0 0 44 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<rect width="44" height="1" rx="0.5" fill="#090909" />
+		<rect y="9" width="44" height="1" rx="0.5" fill="#090909" />
+	</symbol>
+	<symbol id="icon-grid" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M5.5 23.6V7.5H26.118V23.6H5.5Z" stroke="#AC8361" stroke-miterlimit="10" stroke-linecap="round"
+			stroke-linejoin="round" />
+		<path d="M12.2053 11.5V23.2" stroke="#AC8361" stroke-miterlimit="10" stroke-linecap="round"
+			stroke-linejoin="round" />
+		<path d="M12.2051 7.90039L12.2051 9.70039" stroke="#AC8361" stroke-miterlimit="10" stroke-linecap="round"
+			stroke-linejoin="round" />
+		<path d="M15.8088 14.2H25.5369" stroke="#AC8361" stroke-miterlimit="10" stroke-linecap="round"
+			stroke-linejoin="round" />
+		<path d="M12.2053 14.2H13.8267" stroke="#AC8361" stroke-miterlimit="10" stroke-linecap="round"
+			stroke-linejoin="round" />
+	</symbol>
+	<symbol id="icon-settings" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<circle cx="21.4167" cy="10.9167" r="2.41667" stroke="#AD8361" />
+		<circle cx="10.5833" cy="20.0833" r="2.41667" transform="rotate(-180 10.5833 20.0833)" stroke="#AD8361" />
+		<line x1="6.5" y1="10.8333" x2="18.8333" y2="10.8333" stroke="#AD8361" stroke-linecap="round" />
+		<line x1="25.5" y1="20.1667" x2="13.1667" y2="20.1667" stroke="#AD8361" stroke-linecap="round" />
+		<line x1="24" y1="10.8333" x2="25.5" y2="10.8333" stroke="#AD8361" stroke-linecap="round" />
+		<line x1="8" y1="20.1667" x2="6.5" y2="20.1667" stroke="#AD8361" stroke-linecap="round" />
+	</symbol>
+	<symbol id="icon-close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g opacity="0.7">
+			<line x1="18.0209" y1="6.70711" x2="6.70717" y2="18.0208" stroke="currentColor" stroke-linecap="round" />
+			<line x1="18.0208" y1="18.0215" x2="6.70709" y2="6.70778" stroke="currentColor" stroke-linecap="round" />
+		</g>
+	</symbol>
+	<symbol id="icon-key" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M12.9167 3.125C11.1908 3.125 9.79171 4.52411 9.79171 6.25C9.79171 7.97589 11.1908 9.375 12.9167 9.375C14.6426 9.375 16.0417 7.97589 16.0417 6.25C16.0417 4.52411 14.6426 3.125 12.9167 3.125ZM8.54171 6.25C8.54171 3.83376 10.5004 1.875 12.9167 1.875C15.333 1.875 17.2917 3.83376 17.2917 6.25C17.2917 8.66624 15.333 10.625 12.9167 10.625C11.9353 10.625 11.0293 10.3018 10.2995 9.75614L6.71839 13.3345L7.94198 14.5581C8.18606 14.8021 8.18606 15.1979 7.94198 15.4419C7.6979 15.686 7.30218 15.686 7.0581 15.4419L5.83417 14.218L4.21743 15.8335L5.44198 17.0581C5.68606 17.3021 5.68606 17.6979 5.44198 17.9419C5.1979 18.186 4.80218 18.186 4.5581 17.9419L2.89143 16.2753C2.77419 16.158 2.70834 15.999 2.70837 15.8332C2.70841 15.6674 2.77432 15.5084 2.8916 15.3912L5.36316 12.9216C5.37219 12.9113 5.38161 12.9012 5.39143 12.8914C5.40137 12.8815 5.41155 12.8719 5.42197 12.8628L9.41486 8.87298C8.86656 8.14212 8.54171 7.234 8.54171 6.25Z"
+			fill="currentColor" />
+	</symbol>
+	<symbol id="icon-left" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M8 0.841579L0 6.99998L8 13.1584V0.841579Z" fill="currentColor" />
+	</symbol>
+	<symbol id="icon-plus" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M8.00005 16L8.00005 -3.49691e-08L8.80005 0L8.80005 16L8.00005 16Z" fill="currentColor" />
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M16 8.00001L0 8.00001L0 7.20001L16 7.20001V8.00001Z"
+			fill="currentColor" />
+	</symbol>
+
+
+</svg>

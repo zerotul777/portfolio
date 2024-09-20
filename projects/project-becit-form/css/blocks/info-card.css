@@ -1,0 +1,140 @@
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 24px 40px 40px;
+}
+
+.info-card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.info-card__img {
+    width: 140px;
+    height: 165px;
+    flex-shrink: 0;
+}
+
+.info-card__link {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    border-radius: 14px;
+    border: 1px solid #ffffff;
+    padding: 3px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    transition: border-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.info-card__link:hover {
+    border-color: #87F29A;
+    color: #87F29A;
+}
+
+.info-card__link:focus-visible {
+    outline: none;
+    border-color: #87F29A;
+    color: #87F29A;
+}
+
+.info-card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card__title {
+    font-family: 'Press Start 2P', 'Arial', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.info-card__title-logo {
+    text-transform: uppercase;
+    color: #87f29a;
+}
+
+.info-card__text {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 24px;
+}
+
+.info-card__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-card__parameter {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.info-card__boost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background-color: #87f29a;
+    color: #000000;
+}
+
+.info-card__price {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 34px;
+    font-family: 'Press Start 2P', 'Arial', sans-serif;
+}
+
+.info-card__price-old {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+.info-card__price-old::after {
+    content: '';
+    width: 104px;
+    height: 2px;
+    background-color: #ff7575;
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    transform: translateY(-150%);
+}
+
+.info-card__price-new {
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.info-card__agree {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 24px;
+}

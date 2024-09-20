@@ -1,0 +1,39 @@
+// Colors
+
+
+$color-white:          #ffffff;
+$color-black:          #000000;
+$color-black-russian:  #212226;
+$color-nero:           #242424;
+$color-ghost-white:    #f4f4f5;
+$color-lavender:       #e0e5fa;
+$color-foam:           #d2e8e5;
+$color-alice-blue:     #e0effa;
+$color-deep-lilac:     #9e5fc4;
+$color-white-lilac:    #f2e5fa;
+$color-nobel:          #a1a1a1;
+$color-china-ivory:    #f9efcd;
+$color-quartz:         #e1e1e4;
+$color-magnolia:       #f6eefb;
+$color-white-lilac-2:  #eee0f6;
+$color-deep-lilac-2:   #8e47b8;
+$color-grey-suit:      #8c8c8d;
+$color-hawkes-blue:    #d6dce6;
+$color-error:          #e80e0a;
+
+$color-white-50:       rgba(255, 255, 255, 0.50);
+$color-white-30:       rgba(255, 255, 255, 0.30);
+$color-white-20:       rgba(255, 255, 255, 0.20);
+$color-deep-lilac-50:  rgba(158, 95, 196, 0.50);
+$color-black-60:       rgba(0, 0, 0, 0.6);
+$color-nero-50:        rgba(36, 36, 36, 0.50);
+$color-grey-suit-50:     rgba($color-grey-suit, 0.5);
+
+// Typography
+
+$ff-exo: "Exo-2", "Arial", sans-serif;
+
+// Viewport
+
+$vp-tablet: 1023px;
+$vp-mobile: 767px;

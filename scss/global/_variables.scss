@@ -1,0 +1,22 @@
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #808080;
+$color-safety-orange: #FD6F00;
+$color-black-russian: #181823;
+$color-white-80: rgba($color-white, 0.8);
+$color-safety-orange-60: rgba($color-safety-orange, 0.6);
+
+
+// Typography
+$ff-main: "Futura PT", "Arial", sans-serif;
+$ff-galdeano: "Galdeano", "Arial", sans-serif;
+$ff-montserrat: "Montserrat", "Arial", sans-serif;
+
+// Viewport
+$vp-tablet: 1023px;
+$vp-mobile: 767px;
+
+// Animation
+$transition-100: ease-in 0.1s;
+$transition-300: ease-in 0.3s;

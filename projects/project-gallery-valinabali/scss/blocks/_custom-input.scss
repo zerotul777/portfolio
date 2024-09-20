@@ -1,0 +1,83 @@
+.custom-input {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 16px;
+	position: relative;
+
+	@include vp-1023 {
+		width: 100%;
+	}
+
+	&--error .custom-input__error {
+		display: block;
+	}
+	&--error .custom-input__field {
+		border-color: $color-error;
+	}
+
+	&:has(.custom-input__field:disabled) .custom-input__label {
+		color: $color-grey-suit-50;
+	}
+
+	&__label {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 18px;
+		color: $color-grey-suit;
+		margin-bottom: 5px;
+
+		@include vp-767 {
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+
+	&__field {
+		width: 100%;
+		border: 1px solid $color-hawkes-blue;
+		border-radius: 8px;
+		padding: 15px;
+		font-size: 15px;
+		line-height: 20px;
+		font-family: $ff-exo;
+		color: $color-nero;
+		outline: none;
+		transition: border-color 0.2s ease;
+
+		@include vp-767 {
+			font-size: 14px;
+			line-height: 18px;
+			padding: 14px;
+		}
+
+		&::placeholder {
+			opacity: 1;
+			color: $color-grey-suit;
+		}
+
+		&:hover,
+		&:focus-visible {
+			border-color: $color-deep-lilac;
+		}
+
+		&:disabled {
+			background-color: $color-ghost-white;
+			border-color: $color-hawkes-blue;
+		}
+
+		&:disabled::placeholder {
+			color: $color-grey-suit-50;
+		}
+	}
+
+	&__error {
+		display: none;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		font-size: 12px;
+		line-height: 18px;
+		color: $color-error;
+	}
+}

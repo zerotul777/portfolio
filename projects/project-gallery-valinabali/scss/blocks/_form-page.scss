@@ -1,0 +1,72 @@
+.form-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+
+	&__title {
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 36px;
+		color: $color-nero;
+		margin: 0 0 60px;
+		text-align: center;
+
+		@include vp-1023 {
+			font-size: 26px;
+			line-height: 32px;
+			margin: 0 0 30px;
+
+			@include vp-767 {
+				max-width: 180px;
+				font-size: 20px;
+				line-height: 20px;
+				margin: 0 0 20px;
+			}
+		}
+	}
+
+	&__luggage-icon {
+		position: absolute;
+		left: 130px;
+		bottom: 80px;
+		pointer-events: none;
+		width: 72px;
+		height: 134px;
+		opacity: 0.5;
+
+		@include vp-1023 {
+			opacity: 1;
+			width: 80px;
+			height: 149px;
+			left: 20px;
+			bottom: 110px;
+		}
+
+		@include vp-767 {
+			display: none;
+		}
+	}
+
+	&__plane-icon {
+		position: absolute;
+		right: 160px;
+		bottom: 48px;
+		pointer-events: none;
+		opacity: 0.5;
+		width: 236px;
+		height: 74px;
+
+		@include vp-1023 {
+			opacity: 1;
+			right: 40px;
+			bottom: 0;
+			width: 340px;
+			height: 83px;
+		}
+
+		@include vp-767 {
+			display: none;
+		}
+	}
+}

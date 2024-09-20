@@ -1,0 +1,205 @@
+.stages {
+  padding: 30px 0 0;
+  margin: 0 0 140px;
+  overflow-x: hidden;
+}
+
+.stages__wrapper {
+  position: relative;
+  padding: 0 0 30px;
+}
+
+.stages__header {
+  max-width: 806px;
+  margin: 0 0 53px;
+}
+
+.stages__title {
+  display: inline;
+  font-family: "Merriweather", "Times New Roman", serif;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-transform: uppercase;
+}
+
+.stages__link {
+  display: inline-block;
+  max-width: 250px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3057A2;
+  margin: 0 0 0 15px;
+}
+
+.stages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.stages__item {
+  display: flex;
+  gap: 20px;
+}
+
+.stages__item--xl {
+  grid-row: span 2;
+}
+
+.stages__item--flat {
+  grid-column: span 2;
+}
+
+.stages__plane-img {
+  position: absolute;
+  bottom: 28px;
+  right: -63px;
+  user-select: none;
+  z-index: 1;
+}
+
+.stages__carousel {
+  overflow-x: hidden;
+}
+
+.stages__action {
+  display: none;
+  width: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 28px auto 0;
+}
+
+.stages__counter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stages__counter-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  transition: background-color 0.3s ease;
+}
+
+.stages__counter-item--active {
+  background-color: #313131;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1334px) {
+  .stages__plane-img {
+    width: 340px;
+    right: -30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stages {
+    margin: 0 0 12px;
+  }
+
+  .stages__plane-img {
+    bottom: -18px;
+  }
+
+  .stages__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .stages__item {
+    gap: 10px;
+  }
+
+  .stages__item--xl {
+    grid-row: auto;
+  }
+
+  .stages__item--inner {
+    display: contents;
+  }
+}
+
+@media (max-width: 768px) {
+  .stages__header {
+    margin: 0;
+  }
+
+  .stages__title {
+    display: block;
+    margin: 0 0 12px;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+
+  .stages__link {
+    display: block;
+    max-width: unset;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+  .stages__carousel {
+    position: relative;
+    top: -48px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .stages__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .stages__item {
+    min-height: 300px;
+    min-width: 500px;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url("/images/stages-bg/stage-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 62px 20px 34px 72px;
+  }
+
+  .stages__item--inner {
+    display: flex;
+  }
+
+  .stages__action {
+    display: flex;
+  }
+
+  .stages__plane-img {
+    position: relative;
+    width: auto;
+    top: 7px;
+    left: 50%;
+    bottom: 0;
+    transform: rotate(-3.5deg) translateX(-47%);
+  }
+}
+
+@media (max-width: 430px) {
+  .stages__item {
+    gap: 28px;
+  }
+}
+
+@media (max-width:768px) and (min-resolution: 2dppx) {
+  .stages__item {
+    background-image: url("/images/stages-bg/stage-mobile@2x.jpg");
+  }
+}

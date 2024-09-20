@@ -1,0 +1,30 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+
+/* Blocks */
+/* ------------------------------------ */
+
+@import "blocks/_header";
+@import "blocks/_footer";
+@import "blocks/_btn";
+@import "blocks/_social";
+@import "blocks/_breadcrumbs";
+@import "blocks/_main-nav";
+@import "blocks/_menu-tours";
+@import "blocks/_gallery";
+@import "blocks/_gallery-block";
+@import "blocks/_gallery-card";
+@import "blocks/_modal";
+@import "blocks/custom-input";
+@import "blocks/custom-textarea";
+@import "blocks/user-form";
+@import "blocks/success-page";
+@import "blocks/form-page";

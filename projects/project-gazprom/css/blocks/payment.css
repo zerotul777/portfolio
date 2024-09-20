@@ -1,0 +1,25 @@
+.payment {
+	margin: 0 0 100px;
+}
+
+.payment__title {
+	margin: 0 0 40px;
+	font-size: 32px;
+	line-height: 36px;
+	text-align: center;
+	letter-spacing: 0.01em;
+}
+
+.payment__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	gap: 40px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.payment__item {
+	width: calc(25% - 40px * 3 / 4);
+}

@@ -1,0 +1,111 @@
+.header {
+    background-color: #efede7;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header__burger {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    min-height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease-in;
+    outline: none;
+}
+
+.header__user {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+}
+
+.header__lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    position: relative;
+    outline: none;
+}
+
+.header__lang::after,
+.header__favourite::after {
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s ease-in;
+}
+
+.header__favourite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    outline: none;
+}
+
+.header__favourite-icon {
+    color: #ac8361;
+}
+
+.header__favourite-count {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__tel {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    position: relative;
+    outline: none;
+}
+
+.header__tel::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 44px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s ease-in;
+}
+.header__burger:hover, 
+.header__burger:focus-visible, 
+.header__lang:hover::after, 
+.header__lang:focus-visible::after,
+.header__favourite:hover::after, 
+.header__favourite:focus-visible::after,
+.header__tel:hover::after, 
+.header__tel:focus-visible::after {
+    background-color: rgba(117, 114, 110, 0.2);
+}

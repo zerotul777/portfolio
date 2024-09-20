@@ -1,0 +1,25 @@
+.social {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.social__link {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #e3e5eb;
+}
+
+.social__icon {
+	max-width: 15px;
+	max-height: 15px;
+	flex-shrink: 0;
+}

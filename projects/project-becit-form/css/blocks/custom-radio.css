@@ -1,0 +1,33 @@
+.custom-radio {
+    display: flex;
+}
+
+.custom-radio__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+/* Hover */
+.custom-radio__label:hover {
+    background-color: rgba(111, 181, 130, 0.15);
+    color: #87F29A;
+}
+
+/* Focus */
+.custom-radio__field:focus-visible + .custom-radio__label {
+    background-color: rgba(111, 181, 130, 0.15);
+    color: #87F29A;
+}
+
+/* checked */
+.custom-radio__field:checked + .custom-radio__label {
+    color: #87F29A;
+}

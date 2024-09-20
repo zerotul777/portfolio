@@ -1,0 +1,48 @@
+.btn {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 38px;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Play", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 15px;
+    width: 100%;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    border: 1px solid #000000;
+}
+
+.btn:focus-visible {
+    outline: none;
+    border: 1px solid #000000;
+}
+
+.btn--secondary {
+    width: 286px;
+    border: none;
+    border-radius: 40px;
+    background-color: #87F29A;
+    font-family: 'Press Start 2P', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    transition: all 0.2s ease-in;
+}
+
+.btn--secondary:hover {
+    border: none;
+    background-color: #78DF8A;
+}
+.btn--secondary:focus-visible {
+    border: none;
+    background-color: #78DF8A;
+    outline: none;
+}
