@@ -5,11 +5,30 @@
 	display: flex;
 	align-items: center;
 
+	@media (min-width: 1680px) {
+		height: 65vh;
+	}
+
+	@media (max-width: 1279px) {
+		height: 85vh;
+	}
+
+	@include vp-767 {
+		padding: 20px 0 40px;
+		margin: 0;
+		height: auto;
+	}
+
 	&__wrapper {
 		display: flex;
 		gap: 80px;
 		align-items: center;
-    justify-content: space-between;
+		justify-content: space-between;
+
+		@include vp-767 {
+			flex-direction: column;
+			gap: 20px;
+		}
 	}
 
 	&__img {
@@ -17,12 +36,35 @@
 		height: 440px;
 		border-radius: 50%;
 		filter: brightness(1.8);
+
+		@media (max-width: 1279px) {
+			width: 360px;
+			height: 360px;
+		}
+
+		@include vp-1023 {
+			width: 260px;
+			height: 260px;
+		}
+
+		@include vp-767 {
+			order: 2;
+		}
 	}
 
 	&__content {
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
+
+		@include vp-1023 {
+			max-width: 365px;
+			gap: 20px;
+		}
+
+		@include vp-767 {
+			display: contents;
+		}
 	}
 
 	&__title {
@@ -35,10 +77,30 @@
 		line-height: 80px;
 		color: $color-white;
 
+		@media (max-width: 1279px) {
+			font-size: 66px;
+			line-height: 70px;
+		}
+
+		@include vp-1023 {
+			font-size: 32px;
+			line-height: 34px;
+		}
+
+		@include vp-767 {
+			max-width: 360px;
+			width: 100%;
+		}
+
 		&--size-xs {
 			font-weight: 600;
 			font-size: 24px;
 			line-height: 36px;
+
+			@include vp-1023 {
+				font-size: 20px;
+				line-height: 22px;
+			}
 		}
 
 		&--accent {
@@ -46,6 +108,11 @@
 			font-size: 32px;
 			line-height: 34px;
 			color: $color-safety-orange;
+
+			@include vp-1023 {
+				font-size: 25px;
+				line-height: 28px;
+			}
 		}
 
 		&--align-right {
@@ -57,5 +124,14 @@
 		margin: 0;
 		font-size: 22px;
 		line-height: 28px;
+
+		@include vp-1023 {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		@include vp-767 {
+			order: 3;
+		}
 	}
 }

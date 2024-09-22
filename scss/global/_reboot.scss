@@ -24,6 +24,14 @@ body {
 main {
   flex-grow: 1;
   padding: 72px 0 0;
+
+  @include vp-1023 {
+    padding: 56px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 img {

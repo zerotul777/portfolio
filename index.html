@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -38,6 +38,9 @@
             <a class="header__nav-link header__nav-link--accent" href="#contacts">Contacts</a>
           </li>
         </ul>
+        <button class="burger" type="button" aria-label="Переключаетель меню">
+          <span class="burger__menu"></span>
+        </button>
       </div>
     </div>
   </header>
@@ -84,7 +87,7 @@
                 <span class="about__info-value">14 April 1995</span>
               </li>
             </ul>
-            <a class="btn" href="cv/Maksim Chuprina.pdf">Download CV</a>
+            <a class="btn" href="cv/Maksim-Chuprina.pdf">Download CV</a>
           </div>
         </div>
       </div>
@@ -103,7 +106,7 @@
             </li>
             <li class="skills__box-item skills__box-item--accent">
               <span class="skills__box-counter">20+</span>
-              <span class="skills__box-text">Project Completed</span>
+              <span class="skills__box-text">Projects Completed</span>
             </li>
             <li class="skills__box-item">
               <span class="skills__box-counter">100%</span>
@@ -166,8 +169,9 @@
                   <div class="project-card__title">Chess Tournament</div>
                   <p class="project-card__text">Website adaptable to&nbsp;all devices, with ui&nbsp;components and
                     animated interactions.</p>
-                  <a class="project-card__link" href="projects/project-yandex-tournament/index.html">Demo
-                    <svg class="project-card__icon" width="32" height="32" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs btn btn--size-xs"
+                    href="projects/project-yandex-tournament/index.html">Demo
+                    <svg class="btn__icon" width="32" height="32" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -182,8 +186,9 @@
                   <div class="project-card__title">Frunzenskaya Naberejnaja</div>
                   <p class="project-card__text">A&nbsp;responsive website that works seamlessly on&nbsp;all devices,
                     featuring&nbsp;UI components and animated interactions.</p>
-                  <a class="project-card__link" href="projects/project-frunzenskaya-naberejnaja/index.html">Demo
-                    <svg class="project-card__icon" width="42" height="16" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs"
+                    href="projects/project-frunzenskaya-naberejnaja/index.html">Demo
+                    <svg class="btn__icon" width="42" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -192,14 +197,14 @@
             </li>
             <li class="swiper-slide">
               <div class="project-card">
-                <img class="project-card__img" src="images/projects/project-404-animation.JPG" alt="404 Space Aniamtion"
+                <img class="project-card__img" src="images/projects/project-404-animation.JPG" alt="404 Space Animation"
                   width="980" height="528">
                 <div class="project-card__wrapper">
-                  <div class="project-card__title">404 Space Aniamtion</div>
+                  <div class="project-card__title">404 Space Animation</div>
                   <p class="project-card__text">A&nbsp;responsive website that functions flawlessly across all devices,
                     incorporating&nbsp;UI components and smooth animated interactions.</p>
-                  <a class="project-card__link" href="projects/project-404-animation/404.html">Demo
-                    <svg class="project-card__icon" width="42" height="16" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs" href="projects/project-404-animation/404.html">Demo
+                    <svg class="btn__icon" width="42" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -214,8 +219,8 @@
                   <div class="project-card__title">Gazprom Pay Page</div>
                   <p class="project-card__text">An&nbsp;adaptable website that provides a&nbsp;consistent experience
                     across all devices, showcasing&nbsp;UI elements and captivating animations.</p>
-                  <a class="project-card__link" href="projects/project-gazprom/clients.html">Demo
-                    <svg class="project-card__icon" width="42" height="16" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs" href="projects/project-gazprom/clients.html">Demo
+                    <svg class="btn__icon" width="42" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -230,8 +235,8 @@
                   <div class="project-card__title">Project Catalog</div>
                   <p class="project-card__text">A&nbsp;versatile website that ensures a&nbsp;cohesive experience
                     on&nbsp;any device, showcasing striking&nbsp;UI elements and engaging animations.</p>
-                  <a class="project-card__link" href="projects/project-catalog/catalog.html">Demo
-                    <svg class="project-card__icon" width="42" height="16" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs" href="projects/project-catalog/catalog.html">Demo
+                    <svg class="btn__icon" width="42" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -246,8 +251,9 @@
                   <div class="project-card__title">Valinabali Gallery</div>
                   <p class="project-card__text">A&nbsp;responsive website that delivers a&nbsp;seamless experience
                     on&nbsp;all devices, featuring engaging&nbsp;UI elements and stunning animations.</p>
-                  <a class="project-card__link" href="projects/project-gallery-valinabali/gallery.html">Demo
-                    <svg class="project-card__icon" width="42" height="16" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs"
+                    href="projects/project-gallery-valinabali/gallery.html">Demo
+                    <svg class="btn__icon" width="42" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -262,8 +268,9 @@
                   <div class="project-card__title">Valinabali Popular</div>
                   <p class="project-card__text">A&nbsp;dynamic website that ensures a&nbsp;cohesive experience
                     on&nbsp;any device, highlighting captivating&nbsp;UI features and impressive animations.</p>
-                  <a class="project-card__link" href="projects/project-popular-valinabali/popular-tours.html">Demo
-                    <svg class="project-card__icon" width="42" height="16" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs"
+                    href="projects/project-popular-valinabali/popular-tours.html">Demo
+                    <svg class="btn__icon" width="42" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -278,8 +285,8 @@
                   <div class="project-card__title">BECIT Questions-form</div>
                   <p class="project-card__text">An&nbsp;adaptive website that delivers a&nbsp;consistent experience
                     across all devices, featuring attractive&nbsp;UI elements and stunning animations.</p>
-                  <a class="project-card__link" href="projects/project-becit-questions/index.html">Demo
-                    <svg class="project-card__icon" width="42" height="16" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs" href="projects/project-becit-questions/index.html">Demo
+                    <svg class="btn__icon" width="42" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -294,8 +301,8 @@
                   <div class="project-card__title">BECIT Order-form</div>
                   <p class="project-card__text">A&nbsp;flexible website that provides a&nbsp;seamless experience
                     on&nbsp;any device, showcasing engaging&nbsp;UI components and striking animations.</p>
-                  <a class="project-card__link" href="projects/project-becit-form/order.html">Demo
-                    <svg class="project-card__icon" width="42" height="16" aria-hidden="true">
+                  <a class="project-card__link btn btn--size-xs" href="projects/project-becit-form/order.html">Demo
+                    <svg class="btn__icon" width="42" height="16" aria-hidden="true">
                       <use xlink:href="images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </a>
@@ -358,7 +365,7 @@
                 placeholder=""></textarea>
               <label class="custom-textarea__label" for="message">Enter your message</label>
             </div>
-            <button class="btn" type="submit" value="Send">Send message
+            <button class="contacts__btn btn" type="submit" value="Send">Send message
               <svg class="btn__icon" width="24" height="24" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-send"></use>
               </svg>
@@ -449,7 +456,7 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
 </body>

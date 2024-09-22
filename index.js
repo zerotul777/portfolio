@@ -9,13 +9,9 @@ const swiper = new Swiper('.swiper', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-	autoplay: {
-		delay: 5000,
-	},
-	effect: 'cube',
-	cubeEffect: {
-		slideShadows: false,
-	},
+	// autoplay: {
+	// 	delay: 5000,
+	// }
 });
 
 // message-form
@@ -39,4 +35,19 @@ document
 document.querySelector('.popup__btn').addEventListener('click', function () {
 	const popup = document.getElementById('popup');
 	popup.classList.remove('popup--open');
+});
+
+
+// burger
+const burger = document.querySelector('.burger');
+const header = document.querySelector('.header');
+const nav = document.querySelector('.header__nav');
+
+burger.addEventListener('click', () => {
+  header.classList.toggle('header--open');
+});
+
+// Добавляем обработчик события для nav
+nav.addEventListener('click', () => {
+  header.classList.remove('header--open');
 });

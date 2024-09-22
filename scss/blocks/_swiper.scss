@@ -1,6 +1,14 @@
 .swiper {
   width: 100%;
-  height: 300px;
+  min-height: 350px;
+
+  @include vp-1023 {
+    min-height: 280px;
+  }
+
+  @include vp-767 {
+    min-height: 440px;
+  }
 
   &-wrapper {
     margin: 0;
@@ -13,6 +21,10 @@
     outline: none;
     color: $color-safety-orange;
     transition: color $transition-300;
+
+    @include vp-767 {
+      top: 125px;
+    }
 
     &:not(:disabled):hover,
     &:focus-visible {

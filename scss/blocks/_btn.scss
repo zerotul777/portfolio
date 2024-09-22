@@ -15,18 +15,54 @@
 	outline: none;
 	transition: background-color $transition-300;
 
-  &__icon {
-    color: inherit;
-    transition: transform $transition-300;
-  }
+	@include vp-1023 {
+		width: 100%;
+		font-size: 18px;
+		line-height: 22px;
+		padding: 8px;
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+		color: inherit;
+		transition: transform $transition-300;
+
+		@include vp-1023 {
+			width: 18px;
+			height: 18px;
+		}
+	}
 
 	&:not(:disabled):hover,
 	&:focus-visible {
 		background-color: $color-safety-orange-60;
 
-    .btn__icon {
-      transform: translateX(7px);
-    }
+		.btn__icon {
+			transform: translateX(7px);
+		}
+	}
+
+	&--size-xs {
+		width: unset;
+		gap: 7px;
+		border-radius: 6px;
+		padding: 10px 20px;
+
+		@include vp-1023 {
+			gap: 5px;
+			padding: 8px 12px;
+		}
+
+		.btn__icon {
+			width: 20px;
+			height: 20px;
+
+			@include vp-1023 {
+				width: 15px;
+				height: 15px;
+			}
+		}
 	}
 
 	&--secondary {
