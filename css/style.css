@@ -912,7 +912,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (max-width: 767px) {
   .overview {
-    padding: 20px 0 40px;
+    padding: 40px 0;
     margin: 0;
     height: auto;
   }
@@ -1078,7 +1078,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (max-width: 767px) {
   .about {
-    padding: 20px 0 40px;
+    padding: 40px 0;
     margin: 0;
   }
 }
@@ -1259,7 +1259,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (max-width: 767px) {
   .skills {
-    padding: 20px 0 40px;
+    padding: 40px 0;
   }
 }
 .skills__top {
@@ -1527,7 +1527,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (max-width: 767px) {
   .projects {
-    padding: 20px 0 40px;
+    padding: 40px 0;
   }
 }
 .projects__top {
@@ -1678,12 +1678,12 @@ input[type=search]::-webkit-search-results-decoration {
 }
 @media (max-width: 1023px) {
   .contacts {
-    padding: 80px 0 80px;
+    padding: 80px 0;
   }
 }
 @media (max-width: 767px) {
   .contacts {
-    padding: 20px 0 40px;
+    padding: 40px 0;
   }
 }
 .contacts__top {

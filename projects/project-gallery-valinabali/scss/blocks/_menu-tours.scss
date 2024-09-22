@@ -65,7 +65,7 @@
 
 	&__link-text {
 		font-size: 16px;
-		font-weight: 400; // это уже было
+		font-weight: 400;
 		line-height: 20px;
 
 		@include vp-1023 {

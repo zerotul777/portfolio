@@ -10,7 +10,6 @@
   line-height: 19px;
 }
 
-/* Медиа-запросы */
 @media (max-width: 768px) {
   .footer {
     padding: 40px 0 60px;
